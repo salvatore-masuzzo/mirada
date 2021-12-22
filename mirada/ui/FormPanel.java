@@ -37,7 +37,7 @@ public class FormPanel extends JPanel
     private Map<DataField, JTextField> editorMap = new HashMap<>();
     private ValidationManager validationMan = new ValidationManager();
     
-    private JButton checkBtn = new JButton("Check FormPanel");
+    private JButton checkBtn = new JButton("Check Form");
     
     // ----------------------------------------------------------------------------------
     /**
