@@ -14,8 +14,8 @@ import java.util.regex.Pattern;
  */
 public class PhoneNumberFormatValidator extends AbstractValidator 
 {
-    // Only a format such as "+44 7788 123456" or "+44 7788 1234567890" is catered for here
-    private Pattern pattern = Pattern.compile("\\+[1-9]{2}[ ]*[1-9][0-9]{3}[ ]*[0-9]{6,10}");
+    // Only some format such as "+44 7788 123456" or "0044 7788 123456" are catered for here
+    private Pattern pattern = Pattern.compile("((\\\\+)|(00))[1-9]{2}[ ]*[1-9][0-9]{3}[ ]*[0-9]{6,10}");
     
     // ----------------------------------------------------------------------------------
     /**
